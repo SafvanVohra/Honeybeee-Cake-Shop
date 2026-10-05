@@ -60,57 +60,35 @@ export function Hero() {
           </a>
         </motion.div>
 
-        {/* Mobile Showcase Cake Presentation */}
+        {/* Mobile Showcase Cake Presentation (Restored original cake photo & circular presentation) */}
         <motion.div 
-          initial={{ opacity: 0, y: 25, scale: 0.95 }}
+          initial={{ opacity: 0, y: 20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="mt-7 md:hidden relative w-full flex flex-col items-center justify-center max-w-[310px] sm:max-w-[340px] mx-auto px-1"
+          className="mt-8 md:hidden relative w-full flex flex-col items-center justify-center max-w-[310px] mx-auto px-1"
         >
           {/* Glowing back aura */}
-          <div className="absolute inset-0 bg-[#DE9BA9]/30 rounded-full blur-2xl -z-10 scale-90" />
+          <div className="absolute inset-0 bg-[#DE9BA9]/30 rounded-full blur-2xl -z-10 scale-95" />
 
-          {/* Main Hero Cake Image Container */}
-          <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-[2.5rem] overflow-hidden shadow-[0_20px_40px_rgba(216,138,150,0.35)] border-4 border-white bg-white group">
+          {/* Main Hero Cake Image Container - Circular white frame as before */}
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden shadow-[0_20px_40px_rgba(216,138,150,0.35)] border-4 sm:border-8 border-white bg-white group">
             <img 
-              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=900&auto=format&fit=crop" 
-              alt="Honeybeee Signature Chocolate Truffle Cake" 
+              src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              alt="Honeybeee Signature Cake" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               loading="eager"
             />
-            {/* Top Pill Badge */}
-            <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full shadow-md border border-[#DE9BA9]/30 flex items-center gap-1.5">
-              <span className="text-xs">⭐</span>
-              <span className="font-sans font-bold text-[11px] text-bakery-chocolate tracking-wide">
-                4.5 · Vadodara Favorite
-              </span>
-            </div>
-
-            {/* Soft gradient bottom scrim with details */}
-            <div className="absolute inset-0 bg-gradient-to-t from-bakery-chocolate/85 via-bakery-chocolate/25 to-transparent flex items-end p-4">
-              <div className="text-white text-left w-full">
-                <span className="text-[10px] font-bold tracking-widest uppercase bg-[#DE9BA9] text-white px-2.5 py-0.5 rounded-full backdrop-blur-sm shadow-sm inline-block mb-1">
-                  Freshly Baked Daily
-                </span>
-                <p className="font-heading text-xl sm:text-2xl font-bold leading-tight drop-shadow-sm">
-                  Belgian Chocolate Truffle
-                </p>
-                <p className="text-[11px] text-white/90 font-sans tracking-wide mt-0.5">
-                  100% Fresh · Handcrafted with Love
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* Mini Floating Treats Badge */}
           <motion.div 
             animate={{ y: [-3, 3, -3] }}
             transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
-            className="absolute -bottom-3 -right-2 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-lg border border-[#DE9BA9]/40 flex items-center gap-1.5 z-10"
+            className="mt-3.5 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full shadow-lg border border-[#DE9BA9]/40 flex items-center gap-1.5 z-10"
           >
             <span className="text-sm">🎂</span>
             <span className="font-sans font-bold text-xs text-bakery-chocolate whitespace-nowrap">
-              Eggless Available
+              Freshly Baked Daily · 100% Eggless
             </span>
           </motion.div>
         </motion.div>

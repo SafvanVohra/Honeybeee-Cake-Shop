@@ -45,8 +45,8 @@ export function Navbar() {
       {/* Main White Navbar */}
       <div className="relative w-full max-w-full bg-white h-16 sm:h-20 md:h-28 flex items-center justify-between md:grid md:grid-cols-3 px-3 sm:px-6 md:px-10 lg:px-16 shadow-[0_4px_20px_rgba(222,155,169,0.15)]">
 
-        {/* SVG Decorative Center Curve (Desktop Only, hidden on mobile so it never overlaps content) */}
-        <div className="hidden md:block absolute top-full left-1/2 -translate-x-1/2 w-[320px] md:w-[450px] h-[60px] md:h-[80px] overflow-hidden pointer-events-none drop-shadow-[0_8px_15px_rgba(222,155,169,0.12)] z-0">
+        {/* SVG Decorative Center Curve below Logo */}
+        <div className="block absolute top-full left-1/2 -translate-x-1/2 w-[200px] sm:w-[300px] md:w-[450px] h-[32px] sm:h-[55px] md:h-[80px] overflow-hidden pointer-events-none drop-shadow-[0_8px_15px_rgba(222,155,169,0.12)] z-0">
           <svg viewBox="0 0 400 80" preserveAspectRatio="none" className="w-full h-full text-white fill-current">
             <path d="M0,0 C80,0 120,70 200,70 C280,70 320,0 400,0 L400,-10 L0,-10 Z" />
           </svg>
