@@ -36,7 +36,7 @@ export function SignatureCollection() {
   const addItem = useCartStore((state) => state.addItem);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  const handleAddToCart = (item: any) => {
+  const handleAddToCart = (item: (typeof signatureItems)[number]) => {
     addItem({
       name: item.name,
       category: "Signature Cake",

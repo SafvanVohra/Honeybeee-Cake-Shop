@@ -77,7 +77,7 @@ export function ReviewsGallery() {
                 <div>
                   <Quote className="text-bakery-gold/20 w-8 h-8 md:w-12 md:h-12 mb-3 md:mb-4" />
                   <p className="font-subheading text-lg md:text-xl text-bakery-chocolate italic mb-4 md:mb-6 leading-relaxed">
-                    "{review.text}"
+                    &ldquo;{review.text}&rdquo;
                   </p>
                 </div>
                 <div className="flex items-center gap-3 md:gap-4 border-t border-bakery-chocolate/10 pt-4">
